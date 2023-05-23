@@ -1,7 +1,14 @@
+import AboutSection from "./components/AboutSection";
+import { FAQ } from "./components/FAQ";
+import { ServiceSection } from "./components/ServicesSection";
+import { AboutMePage } from "./pages/AboutMePage";
+
 function App() {
   return (
     <>
-      <h1>Hello there!</h1>
+      <AboutSection />
+      <ServiceSection />
+      <FAQ />
     </>
   );
 }
