@@ -7,7 +7,7 @@ export const OurWork = () => {
       <Movie>
         <h2>Mountain top</h2>
         <div className="line"></div>
-        <Link to="/mountains">
+        <Link to="/work/the-mountains">
           <img
             src="https://images.unsplash.com/photo-1682686580186-b55d2a91053c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1675&q=80"
             alt="first project with mountains"
@@ -27,7 +27,7 @@ export const OurWork = () => {
       <Movie>
         <h2>Good times</h2>
         <div className="line"></div>
-        <Link to="/good-times">
+        <Link to="/work/good-times">
           <img
             src="https://images.unsplash.com/photo-1519608425089-7f3bfa6f6bb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
             alt="first project with good times"
