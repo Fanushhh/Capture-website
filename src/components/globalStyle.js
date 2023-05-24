@@ -8,11 +8,13 @@ export const GlobalStyle = createGlobalStyle`
 }
 body{
     background-color:#1b1b1b;
-    color:white;    
+    color:white;
+    font-family: 'Inter', sans-serif;    
 }
 
 button{
     font-weight:bold;
+    font-family: 'Inter', sans-serif;  
     font-size:1.1rem;
     color:white;
     cursor:pointer;
@@ -41,6 +43,7 @@ h4{
 span{
     font-weight:bold;
     color:#23d997;
+    font-family:'Lobster', sans-serif;
 }
 p{
     padding:3rem 0;
