@@ -5,12 +5,21 @@ import {
   faMoneyBill,
   faPeopleGroup,
 } from "@fortawesome/free-solid-svg-icons";
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image } from "../styles";
 import { styled } from "styled-components";
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 export const ServiceSection = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <Services>
+    <Services
+      variants={scrollReveal}
+      initial="hidden"
+      animate={controls}
+      ref={element}
+    >
       <Description>
         <h2>
           High <span>quality</span> services
