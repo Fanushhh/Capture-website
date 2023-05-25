@@ -2,6 +2,7 @@ import { About, Image, Description, Hide } from "../styles";
 import { Wave } from "./Wave";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -24,7 +25,9 @@ export default function AboutSection() {
           Contact me for any web development task you want to tackle or if you
           just wanna talk.
         </motion.p>
-        <motion.button variants={fade}>Contact me</motion.button>
+        <Link to="/contact-us">
+          <motion.button variants={fade}>Contact me</motion.button>
+        </Link>
       </Description>
       <Image>
         <motion.img
