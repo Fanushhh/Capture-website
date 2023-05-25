@@ -1,9 +1,11 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion";
 
 export const OurWork = () => {
   return (
-    <Work>
+    <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Movie>
         <h2>Mountain top</h2>
         <div className="line"></div>
@@ -38,7 +40,7 @@ export const OurWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
