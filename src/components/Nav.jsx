@@ -25,6 +25,9 @@ export const Nav = () => {
 };
 
 const StyledNav = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 10;
   min-height: 10vh;
   display: flex;
   margin: auto;
@@ -51,5 +54,24 @@ const StyledNav = styled.nav`
 
   li {
     position: relative;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 1rem;
+    flex-direction: column;
+    #logo {
+      display: block;
+      text-align: center;
+    }
+    ul {
+      justify-content: center;
+      li {
+        padding: 1rem 0;
+      }
+      a {
+        display: inline-block;
+        font-size: 0.9rem;
+      }
+    }
   }
 `;

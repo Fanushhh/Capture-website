@@ -17,4 +17,11 @@ export const Toggle = ({ children, title }) => {
   );
 };
 
-const StyledToggle = styled(motion.div)``;
+const StyledToggle = styled(motion.div)`
+  h4 {
+    &:hover {
+      color: #23d997;
+      transition: all 0.5s ease;
+    }
+  }
+`;
