@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { titleAnim, pageAnimation } from "../animation";
 import styled from "styled-components";
-import { ScrollTop } from "../components/scrollTop";
+
 export const ContactUsPage = () => {
   return (
     <ContactStyled

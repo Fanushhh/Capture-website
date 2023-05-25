@@ -13,7 +13,7 @@ export const About = styled(motion.div)`
     display: block;
     text-align: center;
     font-size: 1rem;
-    padding: 5rem 2rem;
+    padding: 2rem;
   }
 `;
 

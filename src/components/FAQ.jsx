@@ -20,7 +20,7 @@ export const FAQ = () => {
       <div className="questions">
         <LayoutGroup id="a">
           <Toggle title="How do I start?">
-            <div className="answer">
+            <div layout className="answer">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                 quod?
@@ -31,7 +31,7 @@ export const FAQ = () => {
         </LayoutGroup>
         <LayoutGroup id="b">
           <Toggle title="What's the payment method?">
-            <div className="answer">
+            <div layout className="answer">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                 quod?
@@ -42,7 +42,7 @@ export const FAQ = () => {
         </LayoutGroup>
         <LayoutGroup id="c">
           <Toggle title="What is the delivery time for a project?">
-            <div className="answer">
+            <div layout className="answer">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
                 quod?
@@ -52,7 +52,7 @@ export const FAQ = () => {
           </Toggle>
         </LayoutGroup>
         <LayoutGroup id="d">
-          <Toggle title="What products do you offer?">
+          <Toggle layout title="What products do you offer?">
             <div className="answer">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
