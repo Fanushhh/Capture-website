@@ -54,7 +54,7 @@ export const photoAnim = {
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 0.5,
     },
   },
 };
@@ -79,7 +79,7 @@ export const slider = {
     skew: "0deg",
     transition: {
       ease: "easeOut",
-      duration: 1,
+      duration: 0.9,
     },
   },
 };

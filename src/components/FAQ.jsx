@@ -1,5 +1,7 @@
 import { About, Description, Hide } from "../styles";
 import { styled } from "styled-components";
+import { LayoutGroup } from "framer-motion";
+import { Toggle } from "./Toggle";
 
 export const FAQ = () => {
   return (
@@ -8,50 +10,50 @@ export const FAQ = () => {
         Frequently <span>asked</span> questions
       </h2>
       <div className="questions">
-        <div className="question">
-          <h4>How do I start?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-              quod?
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        <div className="question">
-          <h4>What's the payment method?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-              quod?
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        <div className="question">
-          <h4>What is the delivery time of the project?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-              quod?
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        <div className="question">
-          <h4>What products do you offer?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-              quod?
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
+        <LayoutGroup id="a">
+          <Toggle title="How do I start?">
+            <div className="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                quod?
+              </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </Toggle>
+        </LayoutGroup>
+        <LayoutGroup id="b">
+          <Toggle title="What's the payment method?">
+            <div className="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                quod?
+              </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </Toggle>
+        </LayoutGroup>
+        <LayoutGroup id="c">
+          <Toggle title="What is the delivery time for a project?">
+            <div className="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                quod?
+              </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </Toggle>
+        </LayoutGroup>
+        <LayoutGroup id="d">
+          <Toggle title="What products do you offer?">
+            <div className="answer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                quod?
+              </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </Toggle>
+        </LayoutGroup>
       </div>
     </StyledFAQ>
   );
@@ -67,7 +69,7 @@ const StyledFAQ = styled(About)`
   .faq-line {
     background-color: #cccccc;
     height: 0.2rem;
-    margin: 2rem Orem;
+    margin: 2rem 0;
     width: 100%;
   }
 
